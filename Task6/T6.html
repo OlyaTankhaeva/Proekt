@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задание 6</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Иконки Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="styleT6.css">
+</head>
+
+<body>
+    <center>
+        <a class="nav-link" href="T6_page2.html"><button class="btn btn-outline-dark">ПЕРЕЙТИ НА СТРАНИЦУ 2</button></a>
+    </center>
+    <div class="container mt-5">
+        <form>
+            <div class="row g-3 align-items-center">
+                <div class="col-auto">
+                    <label for="loginInput" class="col-form-label">Логин</label>
+                </div>
+                <div class="col-auto">
+                    <input type="text" id="loginInput" class="form-control" placeholder="Введите логин">
+                </div>
+
+                <div class="col-auto">
+                    <label for="passwordInput" class="col-form-label">Пароль</label>
+                </div>
+                <div class="col-auto">
+                    <input type="password" id="passwordInput" class="form-control" placeholder="Введите пароль">
+                </div>
+
+                <div class="col-auto">
+                    <button type="submit" class="btn btn btn-success">Войти</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <div class="container mt-5">
+        <form>
+            <!-- Логин -->
+            <div class="mb-3">
+                <label for="loginInput" class="form-label">Логин</label>
+                <input type="text" id="loginInput" class="form-control" placeholder="Введите логин"
+                    title="Логин должен содержать минимум 3 символа" required>
+            </div>
+
+            <!-- Пароль -->
+            <div class="mb-3">
+                <label for="passwordInput" class="form-label">Пароль</label>
+                <input type="password" id="passwordInput" class="form-control" placeholder="Введите пароль"
+                    title="Пароль должен содержать минимум 6 символов" required>
+            </div>
+
+            <!-- Чекбокс -->
+            <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="rememberCheck">
+                <label class="form-check-label" for="rememberCheck">Чекбокс</label>
+            </div>
+            <!-- Кнопка -->
+            <button type="submit" class="btn btn-success">Войти</button>
+        </form><br>
+        <!-- 1. Серая -->
+        <button class="btn btn-secondary">Стандартная</button>
+
+        <!-- 2. Синяя -->
+        <button class="btn btn-primary">Основная</button>
+
+        <!-- 3. Зеленая -->
+        <button class="btn btn-success">Подтвердить</button>
+
+        <!-- 4. Голубая -->
+        <button class="btn btn-info">Уведомление</button>
+
+        <!-- 5. Оранжевая -->
+        <button class="btn btn-warning">Внимание</button>
+
+        <!-- 6. Красная -->
+        <button class="btn btn-danger">Отмена</button>
+
+        <!-- 7. Без фона (outline) -->
+        <button class="btn btn-outline-dark">Ссылка</button>
+    </div><br>
+    <a>Таблица 1</a><br>
+    <table>
+        <!-- Заголовки (опционально) -->
+        <tr style="background-color: #f0f0f0;">
+            <td style=padding:8px>Иван</td>
+            <td style=padding:8px>Иванов</td>
+            <td style=padding:8px>Почта</td>
+        </tr>
+        <!-- Строка 2 -->
+        <tr style="background-color: #ffffff;">
+            <td style=padding:8px>Петр</td>
+            <td style=padding:8px>Петров</td>
+            <td style=padding:8px>Почта</td>
+        </tr>
+        <!-- Строка 3 -->
+        <tr style="background-color: #f0f0f0;">
+            <td style=padding:8px>Маша</td>
+            <td style=padding:8px>Иванова</td>
+            <td style=padding:8px>Почта</td>
+        </tr>
+    </table>
+    <br>
+    <a>Таблица 2</a>
+    <br>
+    <table>
+        <!-- Заголовок таблицы -->
+        <tr>
+            <th style="padding: 8px; border: 1px solid #e0e0e0; text-align: left; font-weight: bold;">Имя</th>
+            <th style="padding: 8px; border: 1px solid #e0e0e0; text-align: left; font-weight: bold;">Фамилия</th>
+            <th style="padding: 8px; border: 1px solid #e0e0e0; text-align: left; font-weight: bold;">Почта</th>
+        </tr>
+        <!-- Строки таблицы -->
+        <tr>
+            <td style="padding: 8px; border: 1px solid #e0e0e0;">Иван</td>
+            <td style="padding: 8px; border: 1px solid #e0e0e0;">Иванов</td>
+            <td style="padding: 8px; border: 1px solid #e0e0e0;">Почта</td>
+        </tr>
+        <tr>
+            <td style="padding: 8px; border: 1px solid #e0e0e0;">Петр</td>
+            <td style="padding: 8px; border: 1px solid #e0e0e0;">Петров</td>
+            <td style="padding: 8px; border: 1px solid #e0e0e0;">Почта</td>
+        </tr>
+        <tr>
+            <td style="padding: 8px; border: 1px solid #e0e0e0;">Маша</td>
+            <td style="padding: 8px; border: 1px solid #e0e0e0;">Иванова</td>
+            <td style="padding: 8px; border: 1px solid #e0e0e0;">Почта</td>
+        </tr>
+    </table>
+    <br>
+    <a>Таблица 3</a>
+    <table style="width: 33%">
+        <!-- Заголовок таблицы -->
+        <tr>
+            <th
+                style="padding: 8px; border: 1px solid #e0e0e0; text-align: left; font-weight: bold; background-color: #D3D3D3;">
+                Имя (active)</th>
+            <th
+                style="padding: 8px; border: 1px solid #e0e0e0; text-align: left; font-weight: bold; background-color: #90EE90;">
+                Фамилия (success)</th>
+            <th
+                style="padding: 8px; border: 1px solid #e0e0e0; text-align: left; font-weight: bold; background-color: #ADD8E6;">
+                Почта (info)</th>
+        </tr>
+        <!-- Строки таблицы -->
+        <tr>
+            <td style="padding: 8px; border: 1px solid #e0e0e0; background-color: #FFFF00;">Иван</td>
+            <td style="padding: 8px; border: 1px solid #e0e0e0;">Иванов</td>
+            <td style="padding: 8px; border: 1px solid #e0e0e0; background-color: #FFC0CB;">Почта (danger)</td>
+        </tr>
+        <tr>
+            <td style="padding: 8px; border: 1px solid #e0e0e0;">Петр</td>
+            <td style="padding: 8px; border: 1px solid #e0e0e0;">Петров</td>
+            <td style="padding: 8px; border: 1px solid #e0e0e0;">Почта</td>
+        </tr>
+        <tr>
+            <td style="padding: 8px; border: 1px solid #e0e0e0;">Маша</td>
+            <td style="padding: 8px; border: 1px solid #e0e0e0; background-color: #D3D3D3;">Иванова (active)</td>
+            <td style="padding: 8px; border: 1px solid #e0e0e0;">Почта</td>
+        </tr>
+    </table>
+</body>

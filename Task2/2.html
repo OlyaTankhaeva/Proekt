@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Двухколоночная вёрстка</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: 5fr 1fr;
+            gap: 20px;
+        }
+
+        .column1 {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .column2 {
+            grid-column: 2;
+            grid-row: 1 /10;
+            gap: 20px;
+            background-image: url(image/fon.jpg);
+        }
+
+        h1,
+        p,
+        img,
+        a {
+            padding: 10px;
+        }
+
+        img {
+     
+            height: auto;
+            display: block;
+            margin-right: auto;
+        }
+
+        .h1_1 {
+            color: rgb(101, 197, 218);
+            text-decoration: overline;
+            text-decoration-color: brown;
+        }
+
+        .h2_1 {
+            color: rgb(23, 0, 200);
+        }
+
+        .txt {
+            margin-top: 100%;
+            text-align: center
+        }
+
+        .fixed-table {
+            width: 300px;
+            border-top: 10px solid #006400;
+            /* Верхняя граница */
+            border-bottom: 8px solid #800080;
+            /* Нижняя граница */
+            border-right: 5px dashed #40E0D0;
+            /* Правая граница */
+            border-left: 4px dotted #FF0000;
+            /* Левая граница */
+            border-collapse: collapse;
+            /* Обязательно для двойных границ! */
+        }
+
+        .fixed-table th,
+        .fixed-table td {
+            padding: 10px;
+            border: 3px double #000;
+            /* Двойная черная граница */
+        }
+
+        /* Убираем лишние границы у крайних ячеек, чтобы не конфликтовали с внешними */
+        .fixed-table tr:first-child th {
+            border-top: none;
+            /* Убираем верхнюю границу у первой строки */
+        }
+
+        .fixed-table tr:last-child td {
+            border-bottom: none;
+            /* Убираем нижнюю границу у последней строки */
+        }
+
+        .fixed-table th:first-child,
+        .fixed-table td:first-child {
+            border-left: none;
+            /* Убираем левую границу у первого столбца */
+        }
+
+        .fixed-table th:last-child,
+        .fixed-table td:last-child {
+            border-right: none;
+            /* Убираем правую границу у последнего столбца */
+        }
+
+        .left-align {
+            margin-left: auto;
+        }
+
+        .main-list {
+            list-style-type: lower-greek;
+            /* Греческие буквы: α, β, γ, δ */
+        }
+
+        .sub-list {
+            list-style-type: square;
+            /* Квадратные маркеры */
+            margin-left: 20px;
+            /* Отступ для вложенного списка */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Первая колонка -->
+        <div class="column1">
+            <center>
+                <h1 class="h2_1">Header 1</h1>
+            </center>
+            <p class="left-align">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua.</p>
+            <table class="fixed-table">
+                <tr>
+                    <th><img src="image\кот.jpg"></th>
+                    <th>Cell 1</th>
+                    <th>Cell 2</th>
+                </tr>
+                <tr>
+                    <td>Cell 3</td>
+                    <td>Cell 4</td>
+                    <td>Cell 5</td>
+                </tr>
+            </table>
+        </div>
+        <center>
+            <h4 class="h1_1">Header 1</h4>
+        </center>
+        <ol class="main-list">
+            <li>Item 1</li>
+            <li>Item 2
+                <ul class="sub-list">
+                    <li>Subtem1</li>
+                    <li>Subtem2</li>
+                    <li>Subtem3</li>
+                </ul>
+            </li>
+            <li>Item 3</li>
+            <li>Item 4</li>
+        </ol>
+        <div class="column2">
+            <p></p>
+            <p></p>
+        </div>
+        <a href="1.html" class="full-width1">Back</a>
+    </div>
+</body>
+
+</html>

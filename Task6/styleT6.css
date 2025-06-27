@@ -1,0 +1,26 @@
+        .orange-bg {
+            background-color:#FFCC99 ;  /* Оранжевый фон */
+            padding: 30px 0;
+        }
+                .peach-bg {
+            background-color: #FFE5B4;
+            /* Персиковый фон */
+            padding: 30px 0;
+            min-height: 100vh;
+        }
+
+        .card {
+            margin: 0 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            height: 100%;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card-img-top {
+            height: 250px;
+            object-fit: cover;
+        }

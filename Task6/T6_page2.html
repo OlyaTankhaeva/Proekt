@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Карточки Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styleT6.css">
+</head>
+
+<body>
+    <div class="orange-bg">
+        <div class="container">
+            <div class="row justify-content-center">
+                <!-- Карточка 1 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="photo_T6/к1.jpg" class="card-img-top img-fluid">
+                        <div class="card-body">
+                            <h5 class="card-title">Кот 1</h5>
+                            <p class="card-text">Кошка Муся,светлая окраска.</p>
+                            <button type="button" class="btn btn-warning" data-bs-toggle="modal"
+                                data-bs-target="#catModal1">
+                                Подробнее
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Карточка 2 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="photo_T6/к2.jpg" class="card-img-top img-fluid">
+                        <div class="card-body">
+                            <h5 class="card-title">Кот 2</h5>
+                            <p class="card-text">Кошка Буся,темная окраска.</p>
+                            <a href="#" class="btn btn-warning">Кнопка</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Карточка 3 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="photo_T6/к3.jpg" class="card-img-top img-fluid">
+                        <div class="card-body">
+                            <h5 class="card-title">Кот 3</h5>
+                            <p class="card-text">Кот Барсик.Светло-темная окраска.</p>
+                            <a href="#" class="btn btn-warning">Кнопка</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Модальное окно для первой карточки -->
+    <div class="modal fade" id="catModal1" tabindex="-1" aria-labelledby="catModalLabel1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="catModalLabel1">Кошка Муся</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label for="modalEmail" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="modalEmail">
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label for="modalEmail" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="modalEmail">
+                    </div>
+                    <input class="form-check-input" type="checkbox" id="agreeTerms" required>
+                    <label>Check me</label>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+                    <button type="button" class="btn btn-warning">Отправить</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap 5 JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
