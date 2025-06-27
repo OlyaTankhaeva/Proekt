@@ -1,0 +1,152 @@
+.hero-section {
+    background: linear-gradient(135deg, #bababb, #494849);
+    color: white;
+    padding: 100px 0;
+    margin-bottom: 30px;
+}
+
+.testimonials {
+    background-color: #f8f9fa;
+    padding: 60px 0;
+    margin: 50px 0;
+}
+
+.carousel-item {
+    padding: 40px;
+    text-align: center;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    padding: 20px;
+}
+
+footer {
+    background-color: #343a40;
+    color: white;
+    padding: 30px 0;
+    margin-top: 50px;
+}
+
+.modal-header {
+    background: linear-gradient(135deg, #dadbdc, #a0a0a0);
+    color: white;
+}
+
+.masthead {
+    height: 100vh;
+    min-height: 500px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('photo/title.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.masthead h1,
+.masthead p {
+    color: white;
+    /* Белый текст */
+}
+
+.card {
+    max-width: 250px;
+    /* Фиксированная ширина */
+}
+
+.card-img-top {
+    height: 120px;
+    /* Фиксированная высота картинки */
+    object-fit: cover;
+    /* Чтобы изображение не искажалось */
+}
+
+/* Стили для карточек продуктов */
+.product-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 10px;
+    overflow: hidden;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.product-img {
+    height: 200px;
+    object-fit: cover;
+    width: 100%;
+}
+
+
+/* Адаптивные стили */
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 60px 0;
+    }
+
+    .product-img {
+        height: 150px;
+    }
+
+    .carousel-item .row>div {
+        margin-bottom: 15px;
+    }
+
+    .carousel-item .row>div:last-child {
+        margin-bottom: 0;
+    }
+
+    .testimonial-item {
+        padding: 15px !important;
+    }
+}
+
+@media (max-width: 576px) {
+    .product-card {
+        max-width: 100%;
+        margin: 0 auto 20px;
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        width: 15%;
+    }
+}
+
+.product-card {
+    transition: transform 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.product-img {
+    height: 200px;
+    object-fit: cover;
+}
+
+.filter-section {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+footer {
+    background-color: #343a40;
+    color: white;
+    padding: 40px 0;
+}
+
+
+.hero-section {
+    padding-top: 100px;
+}
+

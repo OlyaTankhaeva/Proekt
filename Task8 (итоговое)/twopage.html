@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Учебный сайт для продвижения</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Иконки Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Навигация страницы  -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow fixed-top">
+        <div class="container">
+            <img src="photo/logo.png">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="onepage.html">Главная</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="twopage.html">Продукция</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="threepage.html">Наши проекты</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="fourpage.html">Контакты</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Герой-секция -->
+    <section class=" py-3 text-center">
+        <div class="container">
+            <br><br><br>
+            <h1 class="display-5 mb-3">Наша продукция</h1>
+            <!-- Секция фильтра -->
+            <div class="filter-section">
+                <div class="row justify-content-center">
+                    <div class="col-md-8">
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="Поиск по продукции..."
+                                aria-label="Поиск по продукции">
+                            <button class="btn btn-outline-secondary" type="button">
+                                <i class="bi bi-search"></i> Поиск
+                            </button>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 mb-2">
+                                <select class="form-select">
+                                    <option selected>Все категории</option>
+                                    <option>Химические анкеры</option>
+                                    <option>Системы усиления</option>
+                                    <option>Специальные составы</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6">
+                                <select class="form-select">
+                                    <option selected>Сортировка</option>
+                                    <option>По названию (А-Я)</option>
+                                    <option>По названию (Я-А)</option>
+                                    <option>Сначала новые</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Блок с карточками -->
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-4 mb-5">
+                <!-- Карточка 1 -->
+                <div class="col">
+                    <div class="card h-100 product-card">
+                        <img src="photo/tovar1.jpg" class="card-img-top img-fluid product-img" alt="ТЕ100">
+                        <div class="card-body">
+                            <h5 class="card-title">ТЕ100</h5>
+                            <p class="card-text">Химический эпоксидный анкер</p>
+                            <button class="btn btn-outline-dark border-2" data-bs-toggle="modal"
+                                data-bs-target="#productModal1">
+                                Подробнее
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Карточка 2 -->
+                <div class="col">
+                    <div class="card h-100 product-card">
+                        <img src="photo/tovar2.jpg" class="card-img-top img-fluid product-img" alt="PU70">
+                        <div class="card-body">
+                            <h5 class="card-title">PU70</h5>
+                            <p class="card-text">Химический эпоксидный анкер</p>
+                            <button class="btn btn-outline-dark border-2" data-bs-toggle="modal"
+                                data-bs-target="#productModal1">
+                                Подробнее
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Карточка 3 -->
+                <div class="col">
+                    <div class="card h-100 product-card">
+                        <img src="photo/tovar1.jpg" class="card-img-top img-fluid product-img" alt="CR500">
+                        <div class="card-body">
+                            <h5 class="card-title">CR500</h5>
+                            <p class="card-text">Система усиления конструкций</p>
+                            <button class="btn btn-outline-dark border-2" data-bs-toggle="modal"
+                                data-bs-target="#productModal1">
+                                Подробнее
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Карточка 4 -->
+                <div class="col">
+                    <div class="card h-100 product-card">
+                        <img src="photo/tovar1.jpg" class="card-img-top img-fluid product-img" alt="CR500">
+                        <div class="card-body">
+                            <h5 class="card-title">CR500</h5>
+                            <p class="card-text">ТЕ 1000</p>
+                            <button class="btn btn-outline-dark border-2" data-bs-toggle="modal"
+                                data-bs-target="#productModal1">
+                                Подробнее
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Карточка 4 -->
+                <div class="col">
+                    <div class="card h-100 product-card">
+                        <img src="photo/tovar1.jpg" class="card-img-top img-fluid product-img" alt="CR500">
+                        <div class="card-body">
+                            <h5 class="card-title">CR500</h5>
+                            <p class="card-text">ТЕ 1000</p>
+                            <button class="btn btn-outline-dark border-2" data-bs-toggle="modal"
+                                data-bs-target="#productModal1">
+                                Подробнее
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Карточка 4 -->
+                <div class="col">
+                    <div class="card h-100 product-card">
+                        <img src="photo/tovar1.jpg" class="card-img-top img-fluid product-img" alt="CR500">
+                        <div class="card-body">
+                            <h5 class="card-title">CR500</h5>
+                            <p class="card-text">ТЕ 1000</p>
+                            <button class="btn btn-outline-dark border-2" data-bs-toggle="modal"
+                                data-bs-target="#productModal1">
+                                Подробнее
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Карточка 4 -->
+                <div class="col">
+                    <div class="card h-100 product-card">
+                        <img src="photo/tovar1.jpg" class="card-img-top img-fluid product-img" alt="CR500">
+                        <div class="card-body">
+                            <h5 class="card-title">CR500</h5>
+                            <p class="card-text">ТЕ 1000</p>
+                            <button class="btn btn-outline-dark border-2" data-bs-toggle="modal"
+                                data-bs-target="#productModal1">
+                                Подробнее
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Карточка 4 -->
+                <div class="col">
+                    <div class="card h-100 product-card">
+                        <img src="photo/tovar1.jpg" class="card-img-top img-fluid product-img" alt="CR500">
+                        <div class="card-body">
+                            <h5 class="card-title">CR500</h5>
+                            <p class="card-text">ТЕ 1000</p>
+                            <button class="btn btn-outline-dark border-2" data-bs-toggle="modal"
+                                data-bs-target="#productModal1">
+                                Подробнее
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5>О компании</h5>
+                    <p>Мы предлагаем инновационные решения для вашего бизнеса с 2010 года.</p>
+                </div>
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5>Контакты</h5>
+                    <ul class="list-unstyled">
+                        <li><i class="bi bi-geo-alt"></i> г. Нижний Новгород</li>
+                        <li><i class="bi bi-telephone"></i> +7 (999) 088-88-88</li>
+                        <li><i class="bi bi-envelope"></i> nngy@mail.ru</li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4 bg-light">
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="mb-0">&copy; 2025 Технологические решения.Все права защищены.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="#" class="text-white me-3">Политика конфиденциальности</a>
+                    <a href="#" class="text-white">Условия использования</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <div class="modal fade" id="productModal1" tabindex="-1" aria-labelledby="productModalLabel1" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="productModalLabel1">ТЕ100 - Химический эпоксидный анкер</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img src="photo/tovar1.jpg" class="img-fluid rounded" alt="ТЕ100">
+                        </div>
+                        <div class="col-md-6">
+                            <h4>Описание</h4>
+                            <p>Двухкомпонентный эпоксидный состав для химического анкерования. Предназначен для
+                                крепления арматуры и анкерных элементов в бетоне, кирпиче и природном камне.</p>
+                            <h4>Характеристики</h4>
+                            <ul>
+                                <li>Прочность на сжатие: 85 МПа</li>
+                                <li>Время отверждения: 24 часа</li>
+                                <li>Температурный диапазон: -30°C до +60°C</li>
+                                <li>Фасовка: 385 мл картридж</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                        data-bs-target="#feedbackModal">Заказать</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
